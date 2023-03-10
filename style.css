@@ -35,22 +35,17 @@ nav ul li {
   border-right: 0.5px solid gray;
 }
 
+nav ul li:hover {
+  background: lightblue;
+}
+
 .active {
-  border-bottom: 2px solid black;
-}
-
-nav ul li a:hover {
-  color: dimgrey;
-  background-color: lightgreen;
-}
-
-nav ul li a:active {
-  color: orange;
-  background-color: green;
+  border-bottom: 2px solid darkgray;
 }
 
 nav ul li:last-child {
   border-right: none;
+  border-bottom: none;
 }
 
 nav ul li a {
@@ -91,7 +86,7 @@ section.middle {
 }
 
 .img-box {
-  width: 55%;
+  width: 60%;
 }
 
 .img-box img {
@@ -119,9 +114,9 @@ section.middle {
 }
 
 .text-box1 {
-  width: 45%;
+  width: 40%;
   display: block;
-  margin-top: 12%;
+  margin-top: 10%;
 }
 
 .text-box1 p {
@@ -129,10 +124,10 @@ section.middle {
   padding-right: 1.1vw;
   font-size: 1vw;
   font-family: "Merriweather", serif;
-  line-height: 2;
+  line-height: 1.8vw;
 }
 
-.text-box1::first-letter{
+.text-box1::first-letter {
   font-family: "Playfair Display black", serif;
   font-weight: bold;
   font-size: 10vw;
@@ -142,10 +137,10 @@ section.middle {
 
 .text-box1 p:first-child {
   font-weight: bold;
-
 }
 
-p.b {
+.text-box1 button:hover {
+  background: #e8dccf;
 }
 
 .text-box1 button {
@@ -169,7 +164,7 @@ p.text-box2 {
   width: 20%;
   height: 43vw;
   display: block;
-  margin-top: 12%;
+  margin-top: 10%;
   padding-left: 2.5%;
   line-height: 1.2;
   border-left: 1px solid rgb(224, 220, 217);
@@ -186,13 +181,10 @@ section.down {
   width: 100%;
 }
 
-.box1 {
-  display: inline-flex;
-}
-
 section.down .box {
-  width: 100%;
+  width: 22%;
   margin: 1.5%;
+  float: left;
 }
 
 section.down h3 {
@@ -231,6 +223,7 @@ footer img {
 footer .contact {
   margin-top: 6%;
   font-family: "Merriweather", serif;
+  color: rgb(150, 138, 126);
   font-size: 1.2vw;
 }
 
@@ -257,23 +250,30 @@ footer p {
     padding-left: 0;
     text-align: center;
     border-left: none;
+    font-size: 2.5vw;
   }
-}
-
-@media only screen and (max-width: 770px) {
-  /* medium devices (landscape tablets, 770px and up) */
 
   #menu-bar {
     display: block;
-    font-weight: bold;
-    font-size: 3vw;
-    margin: 5%;
+    height: 37px;
+    margin: 0 auto;
+    padding: 12px 0;
+    top: 0;
+    position: absolute;
+    z-index: 999;
+    font-weight: 600;
+    font-size: 2vw;
+    color: #9c9185;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-style: italic;
   }
 
   nav {
-    display: none;
-    position: relative;
+    width: 90%;
+    position: absolute;
     z-index: 2;
+    background: white;
   }
 
   nav ul li {
@@ -283,26 +283,56 @@ footer p {
   nav ul {
     border-top: none;
     padding: 0;
+    margin: 0;
   }
   nav ul li {
     border-right: none;
-    border-bottom: 0.5px solid gray;
-    margin: 0.5vw;
+    border-bottom: 1px solid #e6e6e8;
+    margin: 0;
+    padding: 1vw;
   }
   nav ul li a {
-    font-size: 1.5vw;
+    font-size: 2vw;
+    font-weight: normal;
   }
 
+  .text-box1 p {
+    width: 100%;
+    padding-right: 0;
+    font-size: 1.5vw;
+    font-family: "Merriweather", serif;
+    line-height: 2vw;
+    margin-top: -1vw;
+  }
+
+  .text-box1 button {
+    width: 100%;
+    font-size: 2vw;
+  }
+
+  section.down .box {
+    width: 22%;
+    margin: 1.5%;
+    float: left;
+  }
+
+  section.down h3 {
+    font-size: 2.5vw;
+  }
+
+  section.down p {
+    font-size: 1.5vw;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
   /* smal devices (portrait tablets and large phones, 600px and up) */
   .box1 {
     display: block;
   }
 
   .box1 {
-    display: block;
+    display: inline-block;
     width: 100%;
     padding: 2%;
   }
@@ -311,14 +341,29 @@ footer p {
     width: 100%;
     margin: 1.5%;
   }
+
+  section.down p {
+    margin-top: 5%;
+    font-size: 2vw;
+  }
+
+  section.down h3 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  footer .contact {
+    font-size: 1.5vw;
+  }
+
+  section.down img {
+    width: 70%;
+    height: auto;
+  }
 }
 
-@media only screen and (max-width: 460px) {
-  /* extra smal devices (phones, 460px and up) */
-}
-
-@media only screen and (max-width: 320px) {
-  /* extra smal devices (phones, 320px and up) */
+@media only screen and (max-width: 600px) {
+  /* extra smal devices (phones, 600px and up) */
 
   .logo img {
     width: 40vw;
@@ -342,11 +387,6 @@ footer p {
     margin-top: 5%;
     margin-bottom: 5%;
     font-size: 2.5vw;
-  }
-
-  section.down img {
-    width: 55%;
-    height: auto;
   }
 
   section.down p {
