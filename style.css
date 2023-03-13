@@ -55,6 +55,7 @@ nav ul li a {
   font-weight: bold;
   color: rgb(68, 68, 68);
   margin: 2.5vw;
+  font-weight: 400;
 }
 
 nav ul {
@@ -238,8 +239,8 @@ footer p {
 }
 
 footer p a {
-    text-decoration: none;
-    color: #968a7e;
+  text-decoration: none;
+  color: #968a7e;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -248,6 +249,11 @@ footer p a {
 
 @media only screen and (max-width: 990px) {
   /* large devices (laptops and desktops, 990px and up) */
+
+  .logo img {
+    width: 40vw;
+  }
+
   .main-box {
     width: 100%;
     display: block;
@@ -261,6 +267,7 @@ footer p a {
     text-align: center;
     border-left: none;
     font-size: 2.5vw;
+    margin-top: 5%;
   }
 
   #menu-bar {
@@ -272,7 +279,7 @@ footer p a {
     position: absolute;
     z-index: 999;
     font-weight: 600;
-    font-size: 2vw;
+    font-size: 2.2vw;
     color: #9c9185;
     font-family: "Playfair Display", serif;
     font-weight: 900;
@@ -321,16 +328,29 @@ footer p a {
   }
 
   section.down .box {
-    width: 22%;
+    width: 47%;
     margin: 1.5%;
     float: left;
   }
 
   section.down h3 {
     font-size: 2.5vw;
+    margin-top: 15%;
+    margin-bottom: 10%;
   }
 
   section.down p {
+    font-size: 1.5vw;
+    margin-top: 5%;
+  }
+
+  footer img {
+    width: 15vw;
+    display: block;
+    margin: -5% auto;
+}
+
+  footer .contact {
     font-size: 1.5vw;
   }
 }
@@ -367,7 +387,7 @@ footer p a {
   }
 
   section.down img {
-    width: 70%;
+    width: 90%;
     height: auto;
   }
 }
@@ -376,7 +396,7 @@ footer p a {
   /* extra smal devices (phones, 600px and up) */
 
   .logo img {
-    width: 40vw;
+    width: 50vw;
   }
 
   nav ul li {
@@ -384,8 +404,12 @@ footer p a {
   }
 
   nav ul li a {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
+
+  #menu-bar {
+    font-size: 3vw;
+}
 
   section.down {
     display: block;
@@ -394,17 +418,18 @@ footer p a {
   }
 
   section.down h3 {
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 5%;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
 
   section.down p {
-    width: 75%;
+    width: 90%;
     padding: 5px;
     text-align: center;
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin: 0 auto;
+    margin-top: 5%;
   }
 
   .big-box {
@@ -431,9 +456,9 @@ footer p a {
 
   .text-box1 {
     margin: 0 auto;
-    width: 75%;
+    width: 90%;
     display: block;
-    margin-top: 20%;
+    margin-top: 10%;
   }
 
   .mini-img.mini-logo {
@@ -444,27 +469,26 @@ footer p a {
     width: 100%;
     padding-right: 0;
     font-family: "Merriweather", serif;
-    font-size: 2vw;
-    line-height: 2;
-    margin-top: -10px;
+    font-size: 3vw;
+    line-height: 5vw;
   }
 
   .text-box1 button {
     width: 100%;
     padding: 2vw;
-    font-size: 2.5vw;
-  }
-
-  p.text-box2 {
-    width: 75%;
-    margin: 10vw auto;
     font-size: 3vw;
   }
 
-  footer img {
-    width: 15vw;
-    margin: -6% auto;
+  p.text-box2 {
+    width: 90%;
+    margin: 10vw auto;
+    font-size: 4vw;
   }
+
+  footer img {
+    width: 20vw;
+    margin: -7% auto;
+}
 
   footer p {
     margin: 5px auto;
@@ -473,7 +497,7 @@ footer p a {
 
   footer .contact {
     width: 75%;
-    font-size: 2vw;
+    font-size: 2.2vw;
     margin: 10vw auto;
   }
 }
