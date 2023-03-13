@@ -26,13 +26,13 @@
 nav ul {
   max-width: 100%;
   padding-top: 4%;
-  border-top: 0.5px solid gray;
+  border-top: 1px solid #eae8e5;
 }
 
 nav ul li {
   display: inline-block;
   margin: auto;
-  border-right: 0.5px solid gray;
+  border-right: 1px solid #eae8e5;
 }
 
 nav ul li:hover {
@@ -40,7 +40,7 @@ nav ul li:hover {
 }
 
 .active {
-  border-bottom: 2px solid darkgray;
+  border-bottom: 2px solid #eae8e5;
 }
 
 nav ul li:last-child {
@@ -145,7 +145,6 @@ section.middle {
 
 .text-box1 button {
   margin-top: 4vw;
-  font-weight: bold;
   text-transform: uppercase;
   width: 95%;
   padding: 1vw;
@@ -194,6 +193,8 @@ section.down h3 {
   font-family: "Playfair Display", serif;
   font-size: 2vw;
   color: rgb(68, 68, 68);
+  letter-spacing: 3px;
+  font-weight: 400;
 }
 
 section.down img {
@@ -214,6 +215,10 @@ footer {
   margin: 10% auto;
 }
 
+hr {
+  color: #eae8e5;
+}
+
 footer img {
   width: 10vw;
   display: block;
@@ -230,6 +235,11 @@ footer .contact {
 footer p {
   margin: 10px auto;
   text-align: center;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #968a7e;
 }
 
 @media only screen and (max-width: 1200px) {
