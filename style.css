@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* home page css start */
+
 .main-container {
   max-width: 90%;
   margin: auto;
@@ -25,8 +27,9 @@
 
 nav ul {
   max-width: 100%;
-  padding-top: 4%;
+  padding: 2%;
   border-top: 1px solid #eae8e5;
+  border-bottom: 1px solid #eae8e5;
 }
 
 nav ul li {
@@ -35,8 +38,9 @@ nav ul li {
   border-right: 1px solid #eae8e5;
 }
 
-nav ul li:hover {
-  background: lightblue;
+section.down h3:hover,
+nav ul li a:hover {
+  color: #968a7e;
 }
 
 .active {
@@ -59,7 +63,7 @@ nav ul li a {
 }
 
 nav ul {
-  margin: 4% auto;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -83,11 +87,11 @@ section.middle {
 
 .big-box {
   display: inline-flex;
-  width: 95%;
+  width: 100%;
 }
 
 .img-box {
-  width: 60%;
+  width: 62%;
 }
 
 .img-box img {
@@ -115,7 +119,7 @@ section.middle {
 }
 
 .text-box1 {
-  width: 40%;
+  width: 38%;
   display: block;
   margin-top: 10%;
 }
@@ -150,11 +154,15 @@ section.middle {
   width: 95%;
   padding: 1vw;
   border: 1px solid rgb(224, 220, 217);
-  color: rgb(150, 138, 126);
   font-family: "Playfair Display", serif;
   font-size: 1.5vw;
   letter-spacing: 2px;
   background-color: white;
+}
+
+.text-box1 button a {
+  color: rgb(150, 138, 126);
+  text-decoration: none;
 }
 
 p.text-box2 {
@@ -210,6 +218,7 @@ section.down p {
   font-size: 1vw;
   line-height: 1.8;
   text-align: left;
+  color: black;
 }
 
 footer {
@@ -242,6 +251,81 @@ footer p a {
   text-decoration: none;
   color: #968a7e;
 }
+
+/* home page css end */
+
+/* about page css start */
+
+.heading {
+  font-size: 5.5vw;
+  color: #9c9185;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-style: italic;
+  margin-top: 1.5vw;
+  margin-bottom: 5.5vw;
+}
+
+.heading span {
+  border-bottom: 1px solid #eae8e5;
+  padding-left: 3.2vw;
+  word-spacing: 1vw;
+}
+
+.about-content {
+  font-family: "Merriweather";
+  font-size: 1.09vw;
+  line-height: 1.8vw;
+  width: 27%;
+  float: left;
+  margin-bottom: 10vw;
+  color: #444444;
+}
+
+.about-content p:first-child {
+  font-weight: 700;
+}
+
+.about-content::first-letter {
+  font-family: "Playfair Display black", serif;
+  font-weight: bold;
+  font-size: 10vw;
+  line-height: 0;
+  color: rgb(194, 187, 180);
+}
+
+.about-slider ul {
+  list-style: none;
+}
+
+.about-slider .slide img {
+  width: 70%;
+  margin-left: 2vw;
+  margin-top: -2vw;
+  float: left;
+}
+
+.about-middle-img {
+  float: left;
+}
+
+.about-middle-img img {
+  float: left;
+  width: 53%;
+  margin-right: 5vw;
+}
+
+.about-middle-img p {
+  font-family: "Merriweather";
+  font-size: 1.09vw;
+  line-height: 1.8vw;
+  width: 41%;
+  float: left;
+  margin-bottom: 2vw;
+  color: #444444;
+}
+
+/* about page css end */
 
 @media only screen and (max-width: 1200px) {
   /* extra large devices (large laptops and desktops, 1200px and up) */
@@ -348,11 +432,39 @@ footer p a {
     width: 15vw;
     display: block;
     margin: -5% auto;
-}
+  }
 
   footer .contact {
     font-size: 1.5vw;
   }
+
+  /* about page 990px responsive css start */
+
+  .about-content {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    width: 47%;
+    margin-bottom: 4vw;
+  }
+
+  .about-slider .slide img {
+    width: 50%;
+    margin-top: 5vw;
+  }
+
+  .about-middle-img img {
+    width: 45%;
+    margin-right: 3vw;
+    margin-top: 8vw;
+  }
+
+  .about-middle-img p {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    width: 51%;
+  }
+
+  /* about page 990px responsive css end */
 }
 
 @media only screen and (max-width: 770px) {
@@ -395,6 +507,11 @@ footer p a {
 @media only screen and (max-width: 600px) {
   /* extra smal devices (phones, 600px and up) */
 
+  section.background h1 {
+    padding: 10%;
+    font-size: 7vw;
+  }
+  
   .logo img {
     width: 50vw;
   }
@@ -409,7 +526,7 @@ footer p a {
 
   #menu-bar {
     font-size: 3vw;
-}
+  }
 
   section.down {
     display: block;
@@ -441,8 +558,6 @@ footer p a {
     width: 100%;
   }
 
-  .mini-image-box {
-  }
   .mini-img {
     width: 100%;
   }
@@ -488,7 +603,7 @@ footer p a {
   footer img {
     width: 20vw;
     margin: -7% auto;
-}
+  }
 
   footer p {
     margin: 5px auto;
@@ -500,4 +615,45 @@ footer p a {
     font-size: 2.2vw;
     margin: 10vw auto;
   }
+
+  /* about page 600px responsive start */
+
+  .about-content {
+    margin: 0 auto;
+    font-size: 2.5vw;
+    line-height: 4vw;
+    width: 95%;
+    float: none;
+    margin-bottom: 10vw;
+  }
+
+  .heading {
+    font-size: 6vw;
+    margin-bottom: 8vw;
+  }
+
+  .about-slider .slide img {
+    width: 90%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .about-middle-img img {
+    float: none;
+    display: block;
+    width: 90%;
+    margin: 5vw auto;
+  }
+
+  .about-middle-img p {
+    font-size: 2.5vw;
+    line-height: 4vw;
+    width: 90%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* about page 600px responsive end */
 }
