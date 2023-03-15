@@ -206,6 +206,16 @@ section.down h3 {
   font-weight: 400;
 }
 
+section.down h3::after,
+section.down h3::before {
+  height: 1px;
+  display: block;
+  width: 7.4vw;
+  background-color: #eae8e5;
+  content: "";
+  margin: 5% auto;
+}
+
 section.down img {
   width: 100%;
   height: auto;
@@ -326,6 +336,51 @@ footer p a {
 }
 
 /* about page css end */
+
+/* gallery page css start  */
+
+.gallery-content {
+  font-family: "Merriweather";
+  font-size: 1.09vw;
+  line-height: 1.8vw;
+  width: 100%;
+  float: left;
+  padding: 0 3vw 4vw 0;
+  color: #444444;
+}
+
+.gallery-content p:first-child {
+  font-weight: 700;
+}
+
+.gallery-content::first-letter {
+  font-family: "Playfair Display black", serif;
+  font-weight: bold;
+  font-size: 10vw;
+  line-height: 0;
+  color: rgb(194, 187, 180);
+}
+
+.main .gallery-content a {
+  text-decoration: none;
+  color: #444444;
+  font-weight: 700;
+}
+
+.gallery-img {
+  width: 100%;
+  display: inline-flex;
+}
+.gallery-img .row {
+  width: 33%;
+  margin: 0.5%;
+}
+.main .gallery-img img {
+  width: 100%;
+  height: auto;
+  margin: 1%;
+}
+/* gallery page css end  */
 
 @media only screen and (max-width: 1200px) {
   /* extra large devices (large laptops and desktops, 1200px and up) */
@@ -511,7 +566,7 @@ footer p a {
     padding: 10%;
     font-size: 7vw;
   }
-  
+
   .logo img {
     width: 50vw;
   }
