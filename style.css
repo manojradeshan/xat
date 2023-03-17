@@ -645,9 +645,9 @@ section.middle {
 
 .contact-heading h2 {
   color: #968a7e;
-  font-size: 51px;
+  font-size: 4vw;
   font-family: "Playfair Display", serif;
-  margin-bottom: 19px;
+  margin-bottom: 1.5vw;
 }
 
 .contact-form {
@@ -1322,13 +1322,11 @@ input[type="text"] {
     margin: 10vw 0;
   }
 
-  .contact span {
-    font-size: 6vw;
-  }
+}
+
 
   .contact p {
-    margin-left: 10vw;
-    font-size: 3.5vw;
+    font-size: 2.5vw;
   }
 
   .contact-form {
