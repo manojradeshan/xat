@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Playfair+Display:ital@1&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -195,6 +197,10 @@ section.down .box {
   float: left;
 }
 
+section.down a {
+  text-decoration: none;
+}
+
 section.down h3 {
   margin-top: 30%;
   margin-bottom: 30%;
@@ -216,9 +222,12 @@ section.down h3::before {
   margin: 5% auto;
 }
 
-section.down img {
-  width: 100%;
-  height: auto;
+section.down .box-img {
+  width: 21vw;
+  height: 11vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 section.down p {
@@ -245,7 +254,7 @@ footer img {
   margin: -4% auto;
 }
 
-footer .contact {
+footer .footer-contact {
   margin-top: 6%;
   font-family: "Merriweather", serif;
   color: rgb(150, 138, 126);
@@ -358,7 +367,7 @@ footer p a {
   font-weight: bold;
   font-size: 10vw;
   line-height: 0;
-  color: rgb(194, 187, 180);
+  color: #c2bbb4;
 }
 
 .main .gallery-content a {
@@ -381,6 +390,313 @@ footer p a {
   margin: 1%;
 }
 /* gallery page css end  */
+
+/* case studies page css start  */
+
+.card-contsiner {
+  width: 100%;
+}
+
+.card-contsiner .card h3 {
+  font-size: 2.5vw;
+  color: #968a7e;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  line-height: 2.8vw;
+}
+
+.card-contsiner .card h4 {
+  color: #968a7e;
+  font-size: 2.3vw;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.card-contsiner .card {
+  width: 31%;
+  height: 75vw;
+  float: left;
+  margin: 1vw;
+  margin-bottom: 10vw;
+  border-bottom: 1px solid #eae8e5;
+}
+
+.card.card1 {
+  height: 55vw;
+}
+
+.card-contsiner .card a {
+  display: block;
+  position: relative;
+}
+
+.card-contsiner .card img {
+  width: 100%;
+  height: 18vw;
+  object-fit: cover;
+  display: block;
+  margin: 2vw auto;
+  position: relative;
+}
+
+.card span {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  color: #363636;
+  background: #d1d1d1;
+  opacity: 0.8;
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  padding: 1vw;
+  font-size: 1.1vw;
+  font-family: "Merriweather";
+}
+
+.card span:hover {
+  opacity: 1;
+}
+
+.card p {
+  width: 100%;
+  font-family: "Merriweather";
+  font-size: 1vw;
+  line-height: 1.8vw;
+  color: #444444;
+}
+
+/* case studies page css end  */
+
+/* furniture page css start  */
+
+section.middle-content {
+  width: 100%;
+}
+
+section.middle-content .main-img {
+  width: 70%;
+  float: left;
+}
+
+.main-img img {
+  width: 100%;
+  float: left;
+}
+
+.furniture-text {
+  width: 30%;
+  float: left;
+  margin-top: 3.5vw;
+  padding: 0 3.5vw;
+}
+
+.furniture-text p {
+  font-size: 1.1vw;
+  font-family: "Merriweather";
+  line-height: 1.8vw;
+}
+
+.furniture-text::first-letter {
+  font-family: "Playfair Display black", serif;
+  font-weight: bold;
+  font-size: 10vw;
+  line-height: 0;
+  color: #c2bbb4;
+}
+
+.furniture-text p:first-child {
+  font-weight: bold;
+  color: #444444;
+}
+
+.furniture-text button {
+  margin-top: 4vw;
+  width: 100%;
+  padding: 1vw;
+  border: 1px solid rgb(224, 220, 217);
+  font-family: "Playfair Display", serif;
+  font-size: 1.5vw;
+  letter-spacing: 2px;
+  background-color: white;
+}
+
+.furniture-text button a {
+  color: rgb(150, 138, 126);
+  text-decoration: none;
+}
+
+.furniture-text button:hover {
+  background: #e8dccf;
+}
+
+.two-big-img {
+  width: 100%;
+}
+
+.two-big-img img {
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+  margin-top: 4%;
+}
+
+.two-big-img img:last-child {
+  margin-right: 0;
+}
+
+.four-mini-img {
+  display: inline-flex;
+}
+
+.four-mini-img img {
+  width: 22%;
+  margin-right: 4%;
+  margin-top: 2%;
+}
+
+.four-mini-img img:last-child {
+  margin-right: 0;
+}
+
+/* furniture page css end  */
+
+/* rose support page css start */
+
+section.middle {
+  width: 100%;
+}
+
+.rose-content {
+  width: 30%;
+  float: left;
+  padding-right: 2vw;
+}
+
+.rose-content p {
+  width: 100%;
+  padding-right: 1.1vw;
+  font-size: 1.2vw;
+  font-family: "Merriweather", serif;
+  line-height: 1.8vw;
+}
+
+.rose-content::first-letter {
+  font-family: "Playfair Display black", serif;
+  font-weight: bold;
+  font-size: 10vw;
+  line-height: 0;
+  color: rgb(194, 187, 180);
+}
+
+.rose-content p:first-child {
+  font-weight: bold;
+  color: #444444;
+}
+
+.rose-support-img {
+  width: 70%;
+  float: left;
+}
+
+.rose-support-img .col {
+  display: inline-flex;
+}
+
+.rose-support-img .col img {
+  width: 32%;
+  margin-right: 1.5vw;
+}
+
+/* rose support page css end */
+
+/* contact page css start */
+
+.contact-detail {
+  width: 30%;
+  float: left;
+  padding-right: 1.5vw;
+}
+
+.contact {
+  margin: 2vw 0;
+}
+
+.contact span {
+  color: #444444;
+  font-size: 1.5vw;
+  position: absolute;
+}
+
+.contact p {
+  color: #444444;
+  position: relative;
+  margin-left: 3vw;
+  font-family: "Merriweather";
+  font-size: 1.1vw;
+  font-weight: 700;
+}
+
+.contact p a {
+  text-decoration: none;
+  color: #444444;
+}
+
+.contact-heading h2 {
+  color: #968a7e;
+  font-size: 51px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 19px;
+}
+
+.contact-form {
+  width: 70%;
+  float: left;
+  background-color: #f8f7f6;
+  padding: 2vw;
+}
+
+.form-input {
+  width: 96%;
+}
+
+.form-input textarea,
+input[type="text"] {
+  width: 46%;
+  float: left;
+  margin: 2%;
+  padding: 1.5vw;
+  font-size: 1.2vw;
+  color: #968a7e;
+  font-family: "Merriweather serif";
+  font-weight: 700;
+  border: none;
+  border-bottom: 1px solid #968a7e;
+}
+
+.contact-form button {
+  margin-top: 4vw;
+  float: right;
+  width: 30vw;
+  padding: 1vw;
+  border: 1px solid #968a7e;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5vw;
+  letter-spacing: 2px;
+  background-color: white;
+}
+
+.contact-form button:hover {
+  background: #e8dccf;
+}
+
+.contact-form button a {
+  color: rgb(150, 138, 126);
+  text-decoration: none;
+}
+
+/* contact page css end */
 
 @media only screen and (max-width: 1200px) {
   /* extra large devices (large laptops and desktops, 1200px and up) */
@@ -441,12 +757,14 @@ footer p a {
     padding: 0;
     margin: 0;
   }
+
   nav ul li {
     border-right: none;
     border-bottom: 1px solid #e6e6e8;
     margin: 0;
     padding: 1vw;
   }
+
   nav ul li a {
     font-size: 2vw;
     font-weight: normal;
@@ -455,9 +773,9 @@ footer p a {
   .text-box1 p {
     width: 100%;
     padding-right: 0;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     font-family: "Merriweather", serif;
-    line-height: 2vw;
+    line-height: 2.5vw;
     margin-top: -1vw;
   }
 
@@ -470,6 +788,15 @@ footer p a {
     width: 47%;
     margin: 1.5%;
     float: left;
+  }
+
+  section.down .box-img {
+    width: 35vw;
+    height: 20vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
   }
 
   section.down h3 {
@@ -489,15 +816,15 @@ footer p a {
     margin: -5% auto;
   }
 
-  footer .contact {
+  footer .footer-contact {
     font-size: 1.5vw;
   }
 
   /* about page 990px responsive css start */
 
   .about-content {
-    font-size: 1.5vw;
-    line-height: 2vw;
+    font-size: 1.7vw;
+    line-height: 2.5vw;
     width: 47%;
     margin-bottom: 4vw;
   }
@@ -520,6 +847,155 @@ footer p a {
   }
 
   /* about page 990px responsive css end */
+
+  /* about page 990px responsive css end */
+
+  .gallery-content {
+    font-size: 1.5vw;
+    line-height: 2.2vw;
+    padding: 0 1vw 4vw 0;
+  }
+
+  /* about page 990px responsive css end */
+
+  /* case studies 990px css start */
+
+  .card-contsiner .card {
+    width: 47.5%;
+    height: 100vw;
+    float: left;
+    margin: 1vw;
+    margin-bottom: 10vw;
+    border-bottom: 1px solid #eae8e5;
+  }
+
+  .card.card2 {
+    height: 75vw;
+  }
+
+  .card-contsiner .card img {
+    width: 100%;
+    height: 30vw;
+  }
+
+  .card-contsiner .card h3,
+  .card-contsiner .card h4 {
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  .card span {
+    font-size: 1.5vw;
+  }
+
+  .card p {
+    font-size: 1.5vw;
+    line-height: 2.3vw;
+  }
+
+  /* case studies 990px css end */
+
+  /* furniture page 990px css start  */
+
+  .furniture-text p {
+    font-size: 2vw;
+    line-height: 2.7vw;
+  }
+
+  .furniture-text button {
+    padding: 2vw;
+    font-size: 2vw;
+  }
+
+  section.middle-content .main-img {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+
+  .main-img img {
+    float: none;
+  }
+
+  .furniture-text {
+    width: 100%;
+    float: none;
+    margin-top: 0;
+    padding: 5vw;
+  }
+
+  /* furniture page 990px css end  */
+
+  /* rose support page 990px css start  */
+
+  .rose-content {
+    width: 100%;
+    float: none;
+    padding-right: 0;
+  }
+
+  .rose-support-img {
+    width: 100%;
+    float: none;
+    margin-top: 5vw;
+  }
+
+  .rose-content p {
+    padding-right: 3vw;
+    font-size: 2vw;
+    line-height: 2.5vw;
+  }
+
+  /* rose support 990px page css end  */
+
+  /* contact page 990px page css start  */
+
+  .contact-detail {
+    width: 100%;
+    float: none;
+    padding-right: 0;
+    margin: 10vw 0;
+    margin-left: 5vw;
+  }
+
+  .contact {
+    margin: 5vw 0;
+  }
+
+  .contact span {
+    font-size: 4vw;
+  }
+
+  .contact p {
+    margin-left: 8vw;
+    font-size: 2vw;
+  }
+
+  .contact-form {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+
+  .form-input textarea,
+  input[type="text"] {
+    width: 100%;
+    float: none;
+    padding: 2vw;
+    font-size: 2.5vw;
+  }
+
+  .contact-form button {
+    margin-top: 5vw;
+    margin-left: 2vw;
+    float: left;
+    width: 40vw;
+    padding: 2vw;
+    font-size: 2.5vw;
+    letter-spacing: 5px;
+  }
+
+  /* contact page 990px page css end  */
 }
 
 @media only screen and (max-width: 770px) {
@@ -534,11 +1010,6 @@ footer p a {
     padding: 2%;
   }
 
-  section.down .box {
-    width: 100%;
-    margin: 1.5%;
-  }
-
   section.down p {
     margin-top: 5%;
     font-size: 2vw;
@@ -549,7 +1020,7 @@ footer p a {
     margin-bottom: 5%;
   }
 
-  footer .contact {
+  footer .footer-contact {
     font-size: 1.5vw;
   }
 
@@ -557,6 +1028,8 @@ footer p a {
     width: 90%;
     height: auto;
   }
+
+  /* case studies css end */
 }
 
 @media only screen and (max-width: 600px) {
@@ -587,6 +1060,15 @@ footer p a {
     display: block;
     margin: auto;
     width: 100%;
+  }
+
+  section.down .box-img {
+    width: 70vw;
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
   }
 
   section.down h3 {
@@ -655,6 +1137,12 @@ footer p a {
     font-size: 4vw;
   }
 
+  section.down .box {
+    width: 100%;
+    margin: 1.5%;
+    float: left;
+  }
+
   footer img {
     width: 20vw;
     margin: -7% auto;
@@ -665,7 +1153,7 @@ footer p a {
     text-align: center;
   }
 
-  footer .contact {
+  footer .footer-contact {
     width: 75%;
     font-size: 2.2vw;
     margin: 10vw auto;
@@ -685,6 +1173,7 @@ footer p a {
   .heading {
     font-size: 6vw;
     margin-bottom: 8vw;
+    text-align: center;
   }
 
   .about-slider .slide img {
@@ -711,4 +1200,155 @@ footer p a {
   }
 
   /* about page 600px responsive end */
+
+  /* gallery page 600px css start  */
+
+  .gallery-content {
+    margin: 0 auto;
+    font-size: 2.5vw;
+    line-height: 4vw;
+    width: 95%;
+    float: none;
+    margin-bottom: 10vw;
+    padding: 0;
+  }
+
+  .gallery-img {
+    display: block;
+  }
+
+  .gallery-img .row {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main .gallery-img img {
+    width: 100%;
+    height: auto;
+    margin: 5vw auto;
+    display: block;
+  }
+
+  /* gallery page 600px css end  */
+
+  /* case studie 600px css start */
+
+  .card-contsiner .card {
+    width: 85%;
+    height: 140vw;
+    margin: 5vw auto;
+    float: none;
+  }
+
+  .card-contsiner .card:last-child {
+    height: 170vw;
+  }
+
+  .card-contsiner .card h3,
+  .card-contsiner .card h4 {
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  .card-contsiner .card img {
+    width: 100%;
+    height: 50vw;
+    margin: 5vw auto;
+  }
+
+  .card span {
+    font-size: 2.5vw;
+  }
+
+  .card p {
+    font-size: 2.5vw;
+    line-height: 4vw;
+  }
+
+  /* case studie 600px css end */
+
+  /* furniture page 600px css start  */
+
+  .furniture-text p {
+    font-size: 3vw;
+    font-family: "Merriweather";
+    line-height: 5vw;
+  }
+
+  .furniture-text button {
+    padding: 2vw;
+    font-size: 3vw;
+  }
+
+  .two-big-img img {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-top: 4vw;
+  }
+
+  .four-mini-img {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  .four-mini-img img.mini {
+    margin-right: 0;
+    float: right;
+  }
+
+  .four-mini-img img {
+    width: 48%;
+    margin-right: 4%;
+    margin-top: 2%;
+  }
+
+  /* furniture page 600px css end  */
+
+  /* rose support page 600px css start  */
+
+  .rose-content p {
+    padding-right: 0vw;
+    font-size: 2.8vw;
+    line-height: 4vw;
+  }
+
+  /* rose support page 600px css end  */
+
+  /* contact page 600px page css start  */
+
+  .contact {
+    margin: 10vw 0;
+  }
+
+  .contact span {
+    font-size: 6vw;
+  }
+
+  .contact p {
+    margin-left: 10vw;
+    font-size: 3.5vw;
+  }
+
+  .contact-form {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+
+  .form-input textarea,
+  input[type="text"] {
+    padding: 4vw;
+    font-size: 4vw;
+  }
+
+  .contact-form button {
+    font-size: 3.5vw;
+    margin: 10vw auto;
+    display: block;
+    float: none;
+  }
+
+  /* contact page 600px page css end  */
 }
