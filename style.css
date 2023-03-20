@@ -114,14 +114,6 @@ section.middle {
   transition: 1s;
 }
 
-img {
-  transition: 1s;
-}
-
-img:hover {
-  transform: scale(1.05);
-}
-
 .mini-image-box,
 .mini-img {
   width: 100%;
@@ -153,14 +145,6 @@ img:hover {
   font-size: 1vw;
   font-family: "Merriweather", serif;
   line-height: 1.8vw;
-}
-
-p {
-  transition: 1s;
-}
-
-p:hover {
-  transform: scale(1.1);
 }
 
 .text-box1::first-letter {
@@ -275,11 +259,11 @@ section.down .box-img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .box-img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 section.down p {
@@ -426,21 +410,8 @@ footer p a {
   text-decoration: none;
   color: #444444;
   font-weight: 700;
-  transition: 1s;
 }
 
-.main .gallery-content a:hover {
-  font-size: 1.3vw;
-}
-
-span {
-  transition: 1s;
-}
-
-span:hover {
-  font-size: 7vw;
-  padding: 0;
-}
 
 .gallery-img {
   width: 100%;
@@ -473,13 +444,13 @@ span:hover {
 
 .card-contsiner .card h3,
 .card-contsiner .card h4 {
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .card-contsiner .card h3:hover,
 .card-contsiner .card h4:hover {
-  transform: scale(1.1);
-  margin-left: 2vw;
+  transform: scale(1.05);
+  margin-left: 1vw;
 }
 
 .card-contsiner .card h4 {
@@ -515,6 +486,11 @@ span:hover {
   display: block;
   margin: 2vw auto;
   position: relative;
+  transition: 1s;
+}
+
+.card-contsiner .card img:hover {
+  transform: scale(1.05);
 }
 
 .card span {
@@ -535,7 +511,7 @@ span:hover {
 
 .card span:hover {
   opacity: 1;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
 }
 
 .card p {
@@ -722,6 +698,11 @@ section.middle {
   font-family: "Merriweather";
   font-size: 1.1vw;
   font-weight: 700;
+  transition: 1s;
+}
+
+.contact p:hover {
+  transform: scale(1.05);
 }
 
 .contact p a {
@@ -739,7 +720,7 @@ section.middle {
 
 .contact-heading h2:hover {
   transform: scale(1.1);
-  margin-left: 5vw;
+  margin-left: 3vw;
 }
 
 .contact-form {
@@ -840,6 +821,7 @@ input[type="text"]:hover {
   }
 
   nav {
+    display: none;
     width: 90%;
     position: absolute;
     z-index: 2;
